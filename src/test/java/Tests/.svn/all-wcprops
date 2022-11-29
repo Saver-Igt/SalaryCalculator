@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/project1/!svn/ver/87/trunk/RGR/SalaryCalculator/src/test/java/Tests
+END
+ListenerPDFTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/project1/!svn/ver/84/trunk/RGR/SalaryCalculator/src/test/java/Tests/ListenerPDFTest.java
+END
+TaxTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/project1/!svn/ver/86/trunk/RGR/SalaryCalculator/src/test/java/Tests/TaxTest.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/project1/!svn/ver/82/trunk/RGR/SalaryCalculator/src/test/java/Tests/package.html
+END
+CalculationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/project1/!svn/ver/87/trunk/RGR/SalaryCalculator/src/test/java/Tests/CalculationTest.java
+END
+Main_GUItest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/project1/!svn/ver/85/trunk/RGR/SalaryCalculator/src/test/java/Tests/Main_GUItest.java
+END

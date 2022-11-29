@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>RGR</groupId>
+  <artifactId>SalaryCalculator</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>RGR</name>
+  <description>Расчетно-графическая работа по ООМиП</description>
+  <properties>
+        <project.java.version>1.8</project.java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>CreatePDF</groupId>
+    	<artifactId>PDFv.2.0</artifactId>
+    	<version>2.0</version>
+    	<type>jar</type>
+    </dependency>
+  </dependencies>
+<build>
+<pluginManagement>
+<plugins>
+	<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.1</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>Calculator.Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+	</plugin>
+	<plugin>
+		<artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+        	<source>1.8</source>
+        	<target>1.8</target>
+        </configuration>
+	</plugin>   
+	<plugin>
+		<artifactId>maven-resources-plugin</artifactId>
+		<version>2.6</version>
+    	<executions>
+        	<execution>
+            	<id>copy-resources</id>
+            	<phase>validate</phase>
+            	<goals>
+                	<goal>copy-resources</goal>
+            	</goals>
+            <configuration>
+                <outputDirectory>
+                       ${basedir}/src/main/resources
+                </outputDirectory>
+                <resources>
+                    <resource>
+                        <directory>\target\classes\fonts</directory>
+                        <includes>
+                            <include>**/*.ttf</include>
+                        </includes>
+                    </resource>
+                     <resource>
+                        <directory>\target\classes\picture</directory>
+                        <includes>
+                            <include>**/*.png</include>
+                        </includes>
+                    </resource>
+                    
+                </resources>
+            </configuration>
+        </execution>
+    </executions>
+    </plugin>       
+    </plugins>
+    </pluginManagement>
+</build>
+</project>
