@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.URL;
-import javax.swing.JOptionPane;
+
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.Document;
@@ -99,7 +99,7 @@ public final class ListenerPDF implements ActionListener {
 		} catch (IOException e2) {
 			e2.printStackTrace();
 		}
-		
+
 		CreatePDF pdf = new CreatePDF(Namefile,times);
 		Document document = pdf.getDocument();
 		pdf.addText(document, Texthat, 20,true);

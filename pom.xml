@@ -10,20 +10,30 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-    	<groupId>CreatePDF</groupId>
-    	<artifactId>PDFv.2.0</artifactId>
-    	<version>2.0</version>
-    	<type>jar</type>
-    </dependency>
+      <dependency>
+          <groupId>com.itextpdf</groupId>
+          <artifactId>itextpdf</artifactId>
+          <version>5.5.13.3</version>
+      </dependency>
+
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.13.1</version>
+          <scope>test</scope>
+      </dependency>
+
+      <dependency>
+          <groupId>CreatePDF</groupId>
+          <artifactId>PDFv.2.0</artifactId>
+          <version>2.0</version>
+          <scope>system</scope>
+          <systemPath>${basedir}/lib/CreatePDF.jar</systemPath>
+      </dependency>
   </dependencies>
+
 <build>
 <pluginManagement>
 <plugins>

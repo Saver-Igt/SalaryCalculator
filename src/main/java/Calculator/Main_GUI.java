@@ -192,7 +192,7 @@ public final class Main_GUI {
 		setComponentOnPanel(buttonPDF, 135, 200, 180, 30);
 		buttonPDF.addActionListener(new ListenerPDF(this));
 	   
-		mainFrame.setDefaultCloseOperation(mainFrame.EXIT_ON_CLOSE);
+		mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		mainFrame.setVisible(true);
 
    }
